@@ -15,8 +15,6 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("¡API funcionando correctamente!");
 });
-
-// Rutas
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/events", require("./routes/events"));
 

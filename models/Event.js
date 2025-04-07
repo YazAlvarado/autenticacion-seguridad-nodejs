@@ -7,5 +7,4 @@ const EventSchema = new mongoose.Schema({
   location: String,
   createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
 });
-
 module.exports = mongoose.model("Event", EventSchema);
